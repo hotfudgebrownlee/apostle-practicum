@@ -23,12 +23,12 @@ library(cowplot)
 library(tufte)
 ```
 
-```{r load_data}
+```{r load_data, include=FALSE}
 # Use this R-Chunk to import all your datasets!
 load("C:/Users/12088/Documents/Important/BYUI/2021-03-Fall/06-TLP/Practicum/ldsconf.rda")
 ```
 
-```{r tidy_functions}
+```{r tidy_functions, include=FALSE}
 # Use this R-Chunk to clean & wrangle your data!
 alltalks <- genconf %>%
   unnest(sessions) %>%
@@ -112,7 +112,7 @@ apostles <- function(words){
 }
 ```
 
-```{r plot_functions}
+```{r plot_functions, include=FALSE}
 # Use this R-Chunk to plot & visualize your data!
 date_window = c(as.Date('1970-04-01'),
                 as.Date('2030-10-01'))
